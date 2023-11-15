@@ -67,11 +67,9 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "myweb2024:build:production",
               "browserTarget": "myweb2024:build:production"
             },
             "development": {
-              "buildTarget": "myweb2024:build:development",
               "browserTarget": "myweb2024:build:development"
             }
           },
