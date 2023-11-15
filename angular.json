@@ -67,10 +67,12 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "myweb2024:build:production"
+              "buildTarget": "myweb2024:build:production",
+              "browserTarget": "myweb2024:build:production"
             },
             "development": {
-              "buildTarget": "myweb2024:build:development"
+              "buildTarget": "myweb2024:build:development",
+              "browserTarget": "myweb2024:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -78,7 +80,8 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "myweb2024:build"
+            "buildTarget": "myweb2024:build",
+            "browserTarget": "myweb2024:build"
           }
         },
         "test": {
@@ -102,5 +105,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
